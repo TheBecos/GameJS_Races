@@ -1,17 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
     <title>JS Game</title>
     <link rel="stylesheet" href="style.css">
     <meta charset="utf-8">
-    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'/>
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="HandheldFriendly" content="true"/>
+    <script type="text/javascript" src="js/jquery.3.5.1.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
 <div class="wrapper">
-    <iframe src="game.html" border="0" width="626" height="626"></iframe>
+    <iframe src="game.html" width="60%" height="100%" id="roadRace"
+            onload="this.contentWindow.focus()"></iframe>
+    <div class="panel">
+        <a href="javascript:void(0)" class="reloadGame" onclick="Restart()">Начать заново</a>
+    </div>
 </div>
 </body>
 </html>
